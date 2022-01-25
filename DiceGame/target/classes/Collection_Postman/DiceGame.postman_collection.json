@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "b8e849ce-07c8-4fe5-a3f6-19f03ec911e0",
+		"name": "DiceGame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createPlayer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":null\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "throw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/DiceThrow/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"DiceThrow",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/updateName/4/luis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateName",
+						"4",
+						"luis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteThrows",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deleteThrows/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteThrows",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "playersList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/playersList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playersList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "throwsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/throwsList/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"throwsList",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ranking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ranking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ranking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/loser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"loser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "winner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/winner",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"winner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "playerDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/playerDetail/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playerDetail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
