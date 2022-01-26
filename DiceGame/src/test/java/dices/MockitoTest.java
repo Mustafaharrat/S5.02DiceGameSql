@@ -103,7 +103,7 @@ public class MockitoTest {
 	@Order(6)
 	public void TestThrowList() {
 		player=new Player(1,"Jhon",Calendar.getInstance());
-	    when(playerDAO.findById(Mockito.eq(12))).thenReturn(Optional.of(player));
+	    when(playerDAO.findById(Mockito.eq(12))).thenReturn(Optional.of(player));//asignamos un Mockito que equivale a Id 12
 		ResponseEntity<List<DiceThrow>> res=diceService.throwsList(12);
 		assertEquals(HttpStatus.OK,res.getStatusCode());
 
